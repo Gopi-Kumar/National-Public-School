@@ -3,4 +3,91 @@
 body{
     width:100%;
     color:$white;
+    .home__page{
+        .hero{
+            position:relative;
+            background: $light-gray;
+            @include display_as_row_center();
+            .school__img{
+                flex:1;
+
+                img{
+                    width:600px;
+                    border:12px solid $white;
+                    margin:40px;
+                    box-shadow: 1px 1px 5px  $black;
+                }
+            }
+            .welcome__para{
+                padding:1px 20px;
+                color:$black;
+                flex:1;
+                img{
+                    position: absolute;
+                    top:30px;
+                    width:25vw;
+                    left:60vw;
+                    opacity: 0.1;
+                }
+                h1{
+                   font-weight: medium;
+                   font-size: 35px;
+                   margin-bottom: 10px;
+                   text-decoration: underline;
+                   font-family: Righteous;
+                }
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+        .annoucements__container{
+            @include display_as_column_center();
+            width:100%;
+            padding:20px;
+            background:$secondry-background;
+            .annoucements__heading{
+                font-size: 25px;
+                margin:1rem;
+                font-weight: bold;
+                text-decoration: underline;
+                text-decoration-color: $orange;
+            }
+            .annoucements{
+                width:100%;
+                @include display_as_row_space_between();
+                list-style:None;
+                li{
+                    width:200px;
+                    padding:10px;
+                    height:200px;
+                    @include display_center();
+                    animation : animate infinite ease 1s;
+                    // border:2px solid $orange;
+                }
+                @keyframes animate {
+                    0%{
+                        color:green;
+                        font-style: italic;
+                    }
+                    25%{
+                        color:rgb(215, 227, 0);
+                        font-style: bold;
+                    }
+                    50%{
+                        color:rgb(255, 0, 212);
+                        font-style: italic;
+                    }
+                    75%{
+                        color:rgb(255, 255, 255);
+                        font-style: bold;
+                    }
+                    100%{
+                        color:red;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,10 +1,12 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&family=Merienda:wght@400;700&family=Righteous&display=swap");
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&family=Merienda:wght@400;700&family=Righteous&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Khula;
   -webkit-font-smooth: always;
 }
 
@@ -16,7 +18,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Khula;
   -webkit-font-smooth: always;
 }
 
@@ -26,10 +28,11 @@ a {
 
 .header {
   width: 100%;
-  background: #141E61;
+  background: #0F044C;
 }
 .header .social__media__container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
@@ -42,18 +45,19 @@ a {
 .header .social__media__container div {
   width: 42px;
   height: 42px;
-  background: #0F044C;
-  border-bottom: 22.5px solid #141E61;
-  border-left: 22.5px solid #141E61;
-  border-top: 22.5px solid #0F044C;
-  border-right: 22.5px solid #0F044C;
+  background: #070124;
+  border-bottom: 22.5px solid #0F044C;
+  border-left: 22.5px solid #0F044C;
+  border-top: 22.5px solid #070124;
+  border-right: 22.5px solid #070124;
 }
 .header .social__media__container p, .header .social__media__container a {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #0F044C;
+  background: #070124;
   height: 43px;
   padding: 0px 10px;
   font-size: 20px;
@@ -80,12 +84,14 @@ a {
 .header .logo__message__payment {
   padding: 20px 1px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .header .logo__message__payment .logo {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -99,12 +105,14 @@ a {
 .header .logo__message__payment .logo section h1 {
   font-size: 50px;
   text-shadow: 3px 3px 3px black;
+  font-family: Righteous;
 }
 .header .logo__message__payment .logo section p {
   font-size: 20px;
 }
 .header .logo__message__payment .message__payment {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -112,6 +120,7 @@ a {
 }
 .header .logo__message__payment .message__payment button {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -130,6 +139,7 @@ a {
 }
 .header .navbar__container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
@@ -137,26 +147,27 @@ a {
 .header .navbar__container div {
   width: 43px;
   height: 43px;
-  background: #0F044C;
-  border-top: 22.5px solid #141E61;
-  border-left: 22.5px solid #141E61;
-  border-bottom: 22.5px solid #0F044C;
-  border-right: 22.5px solid #0F044C;
+  background: #070124;
+  border-top: 22.5px solid #0F044C;
+  border-left: 22.5px solid #0F044C;
+  border-bottom: 22.5px solid #070124;
+  border-right: 22.5px solid #070124;
 }
 .header .navbar__container a {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 43px;
   width: 120px;
   color: white;
-  background: #0F044C;
+  background: #070124;
   padding: 10px 20px;
   font-size: 15px;
 }
 .header .navbar__container a:hover {
-  background: #141E61;
+  background: #0F044C;
   color: #71EFA3;
   text-shadow: 3px 3px 5px black;
 }
@@ -164,6 +175,104 @@ a {
 body {
   width: 100%;
   color: white;
+}
+body .home__page .hero {
+  position: relative;
+  background: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .home__page .hero .school__img {
+  flex: 1;
+}
+body .home__page .hero .school__img img {
+  width: 600px;
+  border: 12px solid white;
+  margin: 40px;
+  box-shadow: 1px 1px 5px black;
+}
+body .home__page .hero .welcome__para {
+  padding: 1px 20px;
+  color: black;
+  flex: 1;
+}
+body .home__page .hero .welcome__para img {
+  position: absolute;
+  top: 30px;
+  width: 25vw;
+  left: 60vw;
+  opacity: 0.1;
+}
+body .home__page .hero .welcome__para h1 {
+  font-weight: medium;
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-family: Righteous;
+}
+body .home__page .hero .welcome__para p {
+  text-align: justify;
+}
+body .home__page .annoucements__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: #070124;
+}
+body .home__page .annoucements__container .annoucements__heading {
+  font-size: 25px;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #FF3F00;
+}
+body .home__page .annoucements__container .annoucements {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: None;
+}
+body .home__page .annoucements__container .annoucements li {
+  width: 200px;
+  padding: 10px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  animation: animate infinite ease 1s;
+}
+@keyframes animate {
+  0% {
+    color: green;
+    font-style: italic;
+  }
+  25% {
+    color: #d7e300;
+    font-style: bold;
+  }
+  50% {
+    color: #ff00d4;
+    font-style: italic;
+  }
+  75% {
+    color: white;
+    font-style: bold;
+  }
+  100% {
+    color: red;
+    font-style: normal;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

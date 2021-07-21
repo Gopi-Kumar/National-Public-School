@@ -1,11 +1,11 @@
 @import './color.scss';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&family=Merienda:wght@400;700&family=Righteous&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Khula;
     -webkit-font-smooth: always;
 
 }
@@ -14,12 +14,14 @@ a{
 }
 @mixin display_center(){
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 @mixin display_as_column(){
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -31,6 +33,7 @@ a{
 
 @mixin display_as_row(){
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 @mixin display_as_row_end {
