@@ -1,6 +1,169 @@
-@import url("./utills.scss");
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smooth: always;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smooth: always;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  background: #141E61;
+}
+.header .social__media__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .social__media__container #smtext {
+  color: white;
+  font-style: normal;
+  font-size: 15px;
+}
+.header .social__media__container div {
+  width: 42px;
+  height: 42px;
+  background: #0F044C;
+  border-bottom: 22.5px solid #141E61;
+  border-left: 22.5px solid #141E61;
+  border-top: 22.5px solid #0F044C;
+  border-right: 22.5px solid #0F044C;
+}
+.header .social__media__container p, .header .social__media__container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #0F044C;
+  height: 43px;
+  padding: 0px 10px;
+  font-size: 20px;
+}
+.header .social__media__container p .fa-mobile, .header .social__media__container a .fa-mobile {
+  color: white;
+  font-weight: light;
+}
+.header .social__media__container p .fa-facebook, .header .social__media__container a .fa-facebook {
+  color: blue;
+}
+.header .social__media__container p .fa-twitter, .header .social__media__container a .fa-twitter {
+  color: #608dff;
+}
+.header .social__media__container p .fa-youtube, .header .social__media__container a .fa-youtube {
+  color: red;
+}
+.header .social__media__container p .fa-instagram, .header .social__media__container a .fa-instagram {
+  color: pink;
+}
+.header .social__media__container p .fa-pinterest, .header .social__media__container a .fa-pinterest {
+  color: #ff4b69;
+}
+.header .logo__message__payment {
+  padding: 20px 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .logo__message__payment .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .logo__message__payment .logo img {
+  width: 120px;
+}
+.header .logo__message__payment .logo section {
+  text-align: center;
+}
+.header .logo__message__payment .logo section h1 {
+  font-size: 50px;
+  text-shadow: 3px 3px 3px black;
+}
+.header .logo__message__payment .logo section p {
+  font-size: 20px;
+}
+.header .logo__message__payment .message__payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.header .logo__message__payment .message__payment button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  border: 0;
+  background: #FF3F00;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+.header .logo__message__payment .message__payment button i {
+  margin: 0px 10px;
+}
+.header .navbar__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .navbar__container div {
+  width: 43px;
+  height: 43px;
+  background: #0F044C;
+  border-top: 22.5px solid #141E61;
+  border-left: 22.5px solid #141E61;
+  border-bottom: 22.5px solid #0F044C;
+  border-right: 22.5px solid #0F044C;
+}
+.header .navbar__container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  width: 120px;
+  color: white;
+  background: #0F044C;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+.header .navbar__container a:hover {
+  background: #141E61;
+  color: #71EFA3;
+  text-shadow: 3px 3px 5px black;
+}
+
 body {
   width: 100%;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

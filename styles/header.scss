@@ -1,0 +1,117 @@
+@import './utills.scss';
+.header{
+    width:100%;
+    background : $background;
+    .social__media__container{
+        @include display_as_row_end();
+        #smtext{
+            color:white;
+            font-style: normal;
+            font-size: 15px;
+        }
+        div{
+            width: 42px;
+            height:42px;
+            background: $secondry_background;
+            border-bottom:22.5px solid $background ;
+            border-left:22.5px solid $background;
+            border-top:22.5px solid $secondry_background;
+            border-right:22.5px solid $secondry_background;
+        }
+        p,a{
+            @include display_as_row_center();
+            background: $secondry_background;
+            height:43px;
+            padding: 0px 10px;
+            font-size: 20px;
+            .fa-mobile{
+                color:white;
+                font-weight: light;
+            }
+            .fa-facebook{
+                color:blue;
+            }
+            .fa-twitter{
+                color:rgb(96, 141, 255);
+            }
+            .fa-youtube{
+                color:red;
+            }
+            .fa-instagram{
+                color:pink;
+            }
+            .fa-pinterest{
+                color:rgb(255, 75, 105);
+            }
+        }
+    }
+    .logo__message__payment{
+        padding:20px 1px;
+        @include display_as_row_center();
+        .logo{
+            @include display_as_row_center();
+            img{
+                width:120px;
+            }
+            section{
+                  text-align: center;
+                  h1{
+                      font-size: 50px;
+                      text-shadow: 3px 3px 3px $black;
+                  }
+                  p{
+                      font-size: 20px;
+                  }
+            }
+        }
+        .message__payment{
+            @include display_as_row_center();
+            margin-left: 100px;
+            button{
+                @include display_as_row_center();
+                // box-shadow:2px 2px 5px 5px $secondry_background;
+                outline:0;
+                border:0;
+                background:$orange;
+                color:$white;
+                padding:10px 20px;
+                font-size: 15px;
+                border-radius: 20px;  
+                cursor: pointer;
+                margin:10px; 
+                i{
+                    margin:0px 10px;
+                }             
+            }
+        }
+
+    }
+    .navbar__container{
+        @include display_as_row_end();
+        div{
+            width: 43px;
+            height: 43px;
+            background: $secondry_background;
+            border-top:22.5px solid $background ;
+            border-left:22.5px solid $background;
+            border-bottom:22.5px solid $secondry_background;
+            border-right:22.5px solid $secondry_background;
+        }
+        a{
+            @include display_as_row_center();
+            height:43px;
+            width:120px;
+            color:white;
+            background: $secondry_background;
+            padding:10px 20px;
+            font-size: 15px;
+            &:hover{
+                background: $background;
+                color:$lemon-green;
+                text-shadow: 3px 3px 5px $black;
+                // border:1px solid $lemon-green;
+                // border-radius: 20px;
+            }
+        }
+    }
+}
