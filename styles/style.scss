@@ -55,14 +55,15 @@ body{
             }
             .annoucements{
                 width:100%;
-                @include display_as_row_space_between();
+                @include display_as_row_center()    ;
                 list-style:None;
                 li{
                     width:200px;
-                    padding:10px;
                     height:200px;
+                    // background-color: $lemon-green;
                     @include display_center();
-                    animation : animate infinite ease 1s;
+                    // animation : animate infinite ease 1s;
+                    margin:20px;
                     // border:2px solid $orange;
                 }
                 @keyframes animate {
@@ -89,5 +90,59 @@ body{
                 }
             }
         }
+    }
+    .about__us{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        color:$black;
+        .chairman__desk{
+            background: $light-gray;
+        }
+        .principal__desk{
+            background: $secondry-background;
+            color:white;
+        }
+        .chairman__desk, .principal__desk{
+           @include display_as_row_center();
+           padding:25px;
+           .quotes{
+               text-align: justify;
+               width:600px;
+                #dq{
+                    font-weight: bold;
+                    font-size: 50px;
+                }
+           }
+           .img__and__name{
+               @include display_as_column_center();
+               img{
+                   width:500px;
+                   box-shadow: 1px 1px 10px 2px $black;
+                   border:10px solid $orange;
+                   margin:20px 60px;
+               }
+               .name{
+                   text-align: right;
+                   
+                   p{
+                       font-weight: light;
+                       font-size: 25px;
+                       font-family: Righteous;
+                        
+                   }
+                   
+               }
+           }
+        }
+        .history{
+            @include display_as_column_center();
+            padding:20px 50px;
+        }
+    }
+    .footer{
+        width:100%;
+        padding:10px 10px;
+        background:$secondry-background;
+        color:$white;
     }
 }

@@ -126,7 +126,7 @@ a {
   align-items: center;
   outline: 0;
   border: 0;
-  background: #FF3F00;
+  background: #ff4834;
   color: white;
   padding: 10px 20px;
   font-size: 15px;
@@ -231,26 +231,25 @@ body .home__page .annoucements__container .annoucements__heading {
   margin: 1rem;
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: #FF3F00;
+  text-decoration-color: #ff4834;
 }
 body .home__page .annoucements__container .annoucements {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: None;
 }
 body .home__page .annoucements__container .annoucements li {
   width: 200px;
-  padding: 10px;
   height: 200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  animation: animate infinite ease 1s;
+  margin: 20px;
 }
 @keyframes animate {
   0% {
@@ -273,6 +272,68 @@ body .home__page .annoucements__container .annoucements li {
     color: red;
     font-style: normal;
   }
+}
+body .about__us {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+}
+body .about__us .chairman__desk {
+  background: #ebebeb;
+}
+body .about__us .principal__desk {
+  background: #070124;
+  color: white;
+}
+body .about__us .chairman__desk, body .about__us .principal__desk {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+body .about__us .chairman__desk .quotes, body .about__us .principal__desk .quotes {
+  text-align: justify;
+  width: 600px;
+}
+body .about__us .chairman__desk .quotes #dq, body .about__us .principal__desk .quotes #dq {
+  font-weight: bold;
+  font-size: 50px;
+}
+body .about__us .chairman__desk .img__and__name, body .about__us .principal__desk .img__and__name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .about__us .chairman__desk .img__and__name img, body .about__us .principal__desk .img__and__name img {
+  width: 500px;
+  box-shadow: 1px 1px 10px 2px black;
+  border: 10px solid #ff4834;
+  margin: 20px 60px;
+}
+body .about__us .chairman__desk .img__and__name .name, body .about__us .principal__desk .img__and__name .name {
+  text-align: right;
+}
+body .about__us .chairman__desk .img__and__name .name p, body .about__us .principal__desk .img__and__name .name p {
+  font-weight: light;
+  font-size: 25px;
+  font-family: Righteous;
+}
+body .about__us .history {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+}
+body .footer {
+  width: 100%;
+  padding: 10px 10px;
+  background: #070124;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
