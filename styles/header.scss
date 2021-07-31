@@ -43,6 +43,10 @@
             .fa-pinterest{
                 color:rgb(255, 75, 105);
             }
+            .fa-envelope-square{
+                color:rgb(114, 5, 5);
+                background: $white;
+            }
         }
     }
     .logo__message__payment{
@@ -88,6 +92,8 @@
 
     }
     .navbar__container{
+        position: sticky;
+        top:0px;
         @include display_as_row_end();
         div{
             width: 43px;

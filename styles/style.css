@@ -81,6 +81,10 @@ a {
 .header .social__media__container p .fa-pinterest, .header .social__media__container a .fa-pinterest {
   color: #ff4b69;
 }
+.header .social__media__container p .fa-envelope-square, .header .social__media__container a .fa-envelope-square {
+  color: #720505;
+  background: white;
+}
 .header .logo__message__payment {
   padding: 20px 1px;
   display: flex;
@@ -126,7 +130,7 @@ a {
   align-items: center;
   outline: 0;
   border: 0;
-  background: #ff4834;
+  background: #ff2b14;
   color: white;
   padding: 10px 20px;
   font-size: 15px;
@@ -138,6 +142,8 @@ a {
   margin: 0px 10px;
 }
 .header .navbar__container {
+  position: sticky;
+  top: 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -231,7 +237,7 @@ body .home__page .annoucements__container .annoucements__heading {
   margin: 1rem;
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: #ff4834;
+  text-decoration-color: #ff2b14;
 }
 body .home__page .annoucements__container .annoucements {
   width: 100%;
@@ -310,7 +316,7 @@ body .about__us .chairman__desk .img__and__name, body .about__us .principal__des
 body .about__us .chairman__desk .img__and__name img, body .about__us .principal__desk .img__and__name img {
   width: 500px;
   box-shadow: 1px 1px 10px 2px black;
-  border: 10px solid #ff4834;
+  border: 10px solid #ff2b14;
   margin: 20px 60px;
 }
 body .about__us .chairman__desk .img__and__name .name, body .about__us .principal__desk .img__and__name .name {
@@ -328,6 +334,105 @@ body .about__us .history {
   justify-content: center;
   align-items: center;
   padding: 20px 50px;
+}
+body .contact__us {
+  background: #070124;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+body .contact__us #messageForm {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+body .contact__us #messageForm div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+body .contact__us #messageForm div label {
+  margin: 3px;
+}
+body .contact__us #messageForm div input, body .contact__us #messageForm div textarea {
+  outline: 0;
+  border: 0;
+  background: #0F044C;
+  color: white;
+  width: 300px;
+  padding: 5px;
+}
+body .contact__us #messageForm div input:hover, body .contact__us #messageForm div input:active, body .contact__us #messageForm div textarea:hover, body .contact__us #messageForm div textarea:active {
+  box-shadow: 2px 2px 10px 2px #000414;
+  border-radius: 0;
+  outline: 1px solid white;
+  overflow: hidden;
+}
+body .contact__us #messageForm div input {
+  height: 30px;
+}
+body .contact__us #messageForm div textarea {
+  height: 300px;
+}
+body .contact__us #messageForm button {
+  padding: 10px 20px;
+  background: #ff2b14;
+  color: white;
+  border: 0;
+  margin: 30px;
+}
+body .contact__us .contact__numbers {
+  width: 70%;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .contact__us .contact__numbers section {
+  box-shadow: 2px 2px 10px 2px #000414;
+  width: 250px;
+  height: 150px;
+  background: #0F044C;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .contact__us .contact__numbers section p {
+  font-size: 20px;
+}
+body .contact__us .contact__numbers section p:nth-child(1) {
+  color: #ff2b14;
+  font-weight: bold;
+}
+body .contact__us .contact__numbers section span {
+  font-size: 13px;
+  font-style: italic;
+}
+body .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+body .gallery a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #070124;
+  color: white;
 }
 body .footer {
   width: 100%;
