@@ -304,7 +304,7 @@ body .about__us .chairman__desk .quotes, body .about__us .principal__desk .quote
 }
 body .about__us .chairman__desk .quotes #dq, body .about__us .principal__desk .quotes #dq {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 25px;
 }
 body .about__us .chairman__desk .img__and__name, body .about__us .principal__desk .img__and__name {
   display: flex;
@@ -439,6 +439,64 @@ body .footer {
   padding: 10px 10px;
   background: #070124;
   color: white;
+}
+
+@media only screen and (max-width: 1050px) {
+  body .header .social__media__container {
+    width: 100%;
+    background: #070124;
+  }
+  body .header .social__media__container div {
+    display: none;
+  }
+  body .navbar__container {
+    width: 100%;
+    background: #070124;
+  }
+  body .navbar__container div {
+    display: none;
+  }
+  body .hero {
+    padding: 2rem 10px !important;
+  }
+  body .hero .school__img img {
+    width: 500px !important;
+    margin: 0 !important;
+  }
+  body .about__us .quotes {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 950px) {
+  body .header .navbar__container a {
+    padding: 10px !important;
+    width: 100px !important;
+  }
+  body .home__page .hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .home__page .hero .welcome__para {
+    text-align: center;
+  }
+
+  .contact__us {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .contact__us #messageForm {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .contact__us .contact__numbers {
+    width: 100% !important;
+    padding: 2rem 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

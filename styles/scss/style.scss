@@ -1,5 +1,6 @@
 @import './utills.scss';
 @import './header.scss';
+
 body{
     width:100%;
     color:$white;
@@ -16,6 +17,7 @@ body{
                     border:12px solid $white;
                     margin:40px;
                     box-shadow: 1px 1px 5px  $black;
+                    
                 }
             }
             .welcome__para{
@@ -123,7 +125,7 @@ body{
                width:600px;
                 #dq{
                     font-weight: bold;
-                    font-size: 50px;
+                    font-size: 25px;
                 }
            }
            .img__and__name{
@@ -244,3 +246,4 @@ body{
         color:$white;
     }
 }
+@import './tabetStyle.scss';

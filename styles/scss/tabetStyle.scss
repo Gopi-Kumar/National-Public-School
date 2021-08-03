@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1050px) {
+    body {
+        .header{
+            .social__media__container{
+                width:100%;
+                background: $secondry_background;
+               div{
+                   display:none;     
+               }
+            }
+        }
+        .navbar__container{
+            width:100%;
+            background: $secondry_background;
+            div{
+                display:none;
+            }
+        }
+      .hero{
+          padding:2rem 10px!important  ;
+        .school__img{
+            img{
+                width:500px  !important;
+                margin:0  !important;
+            }
+        }
+        .welcome__para{
+            // width:450px !important;
+        }
+      }
+      .about__us{
+          .quotes{
+              width:100% !important;
+          }
+      }
+    }
+  }
+
+@media only screen and (max-width: 950px){
+    body{
+        .header{
+            .navbar__container{
+                a{
+                    // font-size: 12px !important;
+                    padding:10px !important;
+                    width: 100px!important;
+                }
+            }
+        }
+        .home__page{
+            .hero{
+                @include display_as_column_center() ; 
+                .welcome__para{
+                    text-align: center;
+                }
+             }
+        }
+    }
+    .contact__us{
+        flex-direction: column!important;
+        align-items: center;
+        justify-content: center;
+        padding:2rem 0;
+        #messageForm{
+            padding:0 !important;
+            width:100% !important;
+        }
+        .contact__numbers{
+            width:100% !important;
+            padding:2rem 0!important;
+            section{
+
+            }
+        }
+    }
+}
+
+
