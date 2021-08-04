@@ -74,12 +74,10 @@ body{
                 list-style:None;
                 li{
                     width:200px;
-                    height:200px;
-                    // background-color: $lemon-green;
                     @include display_center();
-                    // animation : animate infinite ease 1s;
-                    margin:20px;
-                    // border:2px solid $orange;
+                    color:$orange;
+                    margin:15px 25px;
+                    text-shadow: 3px 3px 5px $black;
                 }
                 @keyframes animate {
                     0%{

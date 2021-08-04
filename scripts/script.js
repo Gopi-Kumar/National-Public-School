@@ -31,3 +31,22 @@ function sendMessage(){
         console.log("Fill all field.")
     }
 }
+
+
+//Drop Down functions
+
+let dropdownMenu = document.querySelector(".header .navbar__container");
+let showDropdownButton = document.getElementById("showDropdownButton");
+let closeDropdownButton = document.getElementById("closeDropdownButton");
+
+function showDropdownMenu(){
+    dropdownMenu.style.display = "flex";
+    showDropdownButton.style.display = "none";
+    closeDropdownButton.style.display = "flex";
+}
+
+function closeDropdownMenu(){
+    dropdownMenu.style.display = "none";
+    showDropdownButton.style.display = "flex";
+    closeDropdownButton.style.display = "none";
+}

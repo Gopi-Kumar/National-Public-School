@@ -82,7 +82,7 @@
                 padding:10px 20px;
                 font-size: 15px;
                 border-radius: 20px;  
-                cursor: pointer;
+                cursor: pointer; 
                 margin:10px; 
                 i{
                     margin:0px 10px;
@@ -91,9 +91,31 @@
         }
 
     }
+    
+    .dropdown__container{
+        display: none !important;
+        width:100%;
+        background: $secondry_background;
+        @include display_as_row_end();
+        
+        button{
+            padding:0;
+            background: none;
+            border:0;
+            i{
+                cursor:pointer;
+                padding:10px;
+                font-size: 22px;
+                color:white;
+                
+            }
+            &:nth-child(2){
+                display: none;
+            }
+        }
+    }
+
     .navbar__container{
-        position: sticky;
-        top:0px;
         @include display_as_row_end();
         div{
             width: 43px;
@@ -110,13 +132,13 @@
             width:120px;
             color:white;
             background: $secondry_background;
-            padding:10px 20px;
+            // padding:10px 20px;
             font-size: 15px;
             &:hover{
                 background: $background;
                 color:$lemon-green;
                 text-shadow: 3px 3px 5px $black;
             }
-        }
+        } 
     }
 }
