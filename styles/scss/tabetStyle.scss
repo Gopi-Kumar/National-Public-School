@@ -23,6 +23,7 @@
         .school__img{
             img{
                 width:500px  !important;
+                margin:0  !important;
             }
         }
        
@@ -92,6 +93,13 @@
                     }
 
                 }
+            }
+        }
+        .img_slide_show{
+            img{
+                width:100%;
+                height:auto;
+                max-height: 500px;
             }
         }
     }    

@@ -115,6 +115,41 @@ body{
             }
         }
     }
+    .img_slide_show{
+        background: $background;
+        @include display_as_column_center();
+        img{
+            height:500px;
+        }
+        .next_prev_btn{
+            width:100%;
+            position:absolute;
+            @include display_as_row_space_between();
+            button{
+                background: $white;
+                cursor:pointer;
+                @include display_as_column_center();
+                outline:0;
+                border:0;
+                padding:1rem;
+                font-size: 34px;
+                width:60px;
+                height:75x;
+                margin:1rem;
+                opacity:0.9;
+                &:hover{
+                    background: $light-gray;
+                    color:$secondry_background;
+                }
+                &:nth-child(1){
+                    border-radius: 20px 0px 0px 20px;
+                }
+                &:nth-child(2){
+                    border-radius: 0px 20px 20px 0px;
+                }
+            }
+        }
+    }
     .about__us{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 

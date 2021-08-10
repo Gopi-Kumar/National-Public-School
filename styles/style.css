@@ -322,6 +322,53 @@ body .home__page .annoucements__container .annoucements li {
   margin: 15px 25px;
   text-shadow: 3px 3px 5px black;
 }
+body .img_slide_show {
+  background: #0F044C;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .img_slide_show img {
+  height: 500px;
+}
+body .img_slide_show .next_prev_btn {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .img_slide_show .next_prev_btn button {
+  background: white;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  font-size: 34px;
+  width: 60px;
+  height: 75x;
+  margin: 1rem;
+  opacity: 0.9;
+}
+body .img_slide_show .next_prev_btn button:hover {
+  background: #ebebeb;
+  color: #070124;
+}
+body .img_slide_show .next_prev_btn button:nth-child(1) {
+  border-radius: 20px 0px 0px 20px;
+}
+body .img_slide_show .next_prev_btn button:nth-child(2) {
+  border-radius: 0px 20px 20px 0px;
+}
 body .about__us {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: black;
@@ -518,6 +565,7 @@ a {
   }
   body .hero .school__img img {
     width: 500px !important;
+    margin: 0 !important;
   }
   body .about__us .quotes {
     width: 100% !important;
@@ -568,6 +616,11 @@ a {
   }
   body .header .navbar__container li ul {
     margin-left: 70px;
+  }
+  body .img_slide_show img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
   }
 }
 

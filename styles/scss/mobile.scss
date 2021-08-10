@@ -1,5 +1,10 @@
 @import './utills.scss';
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 350px){
+    body .home__page .hero .school__img img{
+        width: 300px !important;
+    }
+}
+@media only screen and (max-width: 560px){
     body{
         .header{
             width:100vw;
@@ -92,6 +97,7 @@
 
 @media only screen and (max-width: 600px){
     body{
+       
         .contact__us{
             section{
                 width:45%!important;
