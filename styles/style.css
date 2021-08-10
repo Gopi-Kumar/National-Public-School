@@ -53,7 +53,7 @@ body .header .social__media__container div {
   border-top: 22.5px solid #070124;
   border-right: 22.5px solid #070124;
 }
-body .header .social__media__container p, body .header .social__media__container a {
+body .header .social__media__container p, body .header .social__media__container a, body .header .social__media__container section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -64,26 +64,26 @@ body .header .social__media__container p, body .header .social__media__container
   padding: 0px 10px;
   font-size: 20px;
 }
-body .header .social__media__container p .fa-mobile, body .header .social__media__container a .fa-mobile {
+body .header .social__media__container p .fa-mobile, body .header .social__media__container a .fa-mobile, body .header .social__media__container section .fa-mobile {
   color: white;
   font-weight: light;
 }
-body .header .social__media__container p .fa-facebook, body .header .social__media__container a .fa-facebook {
+body .header .social__media__container p .fa-facebook, body .header .social__media__container a .fa-facebook, body .header .social__media__container section .fa-facebook {
   color: blue;
 }
-body .header .social__media__container p .fa-twitter, body .header .social__media__container a .fa-twitter {
+body .header .social__media__container p .fa-twitter, body .header .social__media__container a .fa-twitter, body .header .social__media__container section .fa-twitter {
   color: #608dff;
 }
-body .header .social__media__container p .fa-youtube, body .header .social__media__container a .fa-youtube {
+body .header .social__media__container p .fa-youtube, body .header .social__media__container a .fa-youtube, body .header .social__media__container section .fa-youtube {
   color: red;
 }
-body .header .social__media__container p .fa-instagram, body .header .social__media__container a .fa-instagram {
+body .header .social__media__container p .fa-instagram, body .header .social__media__container a .fa-instagram, body .header .social__media__container section .fa-instagram {
   color: pink;
 }
-body .header .social__media__container p .fa-pinterest, body .header .social__media__container a .fa-pinterest {
+body .header .social__media__container p .fa-pinterest, body .header .social__media__container a .fa-pinterest, body .header .social__media__container section .fa-pinterest {
   color: #ff4b69;
 }
-body .header .social__media__container p .fa-envelope-square, body .header .social__media__container a .fa-envelope-square {
+body .header .social__media__container p .fa-envelope-square, body .header .social__media__container a .fa-envelope-square, body .header .social__media__container section .fa-envelope-square {
   color: #720505;
   background: white;
 }
@@ -518,7 +518,6 @@ a {
   }
   body .hero .school__img img {
     width: 500px !important;
-    margin: 0 !important;
   }
   body .about__us .quotes {
     width: 100% !important;

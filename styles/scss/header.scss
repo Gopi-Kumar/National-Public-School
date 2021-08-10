@@ -19,7 +19,7 @@ body{
                 border-top:22.5px solid $secondry_background;
                 border-right:22.5px solid $secondry_background;
             }
-            p,a{
+            p,a,section{
                 @include display_as_row_center();
                 background: $secondry_background;
                 height:43px;

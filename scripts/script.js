@@ -45,7 +45,6 @@ function showDropdownMenu(){
     showDropdownButton.style.display = "none";
     closeDropdownButton.style.display = "flex";
 }
-showDropdownMenu();
 function closeDropdownMenu(){
     dropdownMenu.style.display = "none";
     showDropdownButton.style.display = "flex";
