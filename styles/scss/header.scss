@@ -1,144 +1,159 @@
 @import './utills.scss';
-.header{
-    width:100%;
-    background : $background;
-    .social__media__container{
-        @include display_as_row_end();
-        #smtext{
-            color:white;
-            font-style: normal;
-            font-size: 15px;
-        }
-        div{
-            width: 42px;
-            height:42px;
-            background: $secondry_background;
-            border-bottom:22.5px solid $background ;
-            border-left:22.5px solid $background;
-            border-top:22.5px solid $secondry_background;
-            border-right:22.5px solid $secondry_background;
-        }
-        p,a{
-            @include display_as_row_center();
-            background: $secondry_background;
-            height:43px;
-            padding: 0px 10px;
-            font-size: 20px;
-            .fa-mobile{
-                color:white;
-                font-weight: light;
-            }
-            .fa-facebook{
-                color:blue;
-            }
-            .fa-twitter{
-                color:rgb(96, 141, 255);
-            }
-            .fa-youtube{
-                color:red;
-            }
-            .fa-instagram{
-                color:pink;
-            }
-            .fa-pinterest{
-                color:rgb(255, 75, 105);
-            }
-            .fa-envelope-square{
-                color:rgb(114, 5, 5);
-                background: $white;
-            }
-        }
-    }
-    .logo__message__payment{
-        padding:20px 1px;
-        @include display_as_row_center();
-        .logo{
-            @include display_as_row_center();
-            img{
-                width:120px;
-            }
-            section{
-                  text-align: center;
-                  h1{
-                      font-size: 50px;
-                      text-shadow: 3px 3px 3px $black;
-                      font-family: Righteous;
-                  }
-                  p{
-                      font-size: 20px;
-                  }
-            }
-        }
-        .message__payment{
-            @include display_as_row_center();
-            margin-left: 100px;
-            button{
-                @include display_as_row_center();
-                // box-shadow:2px 2px 5px 5px $secondry_background;
-                outline:0;
-                border:0;
-                background:$orange;
-                color:$white;
-                padding:10px 20px;
-                font-size: 15px;
-                border-radius: 20px;  
-                cursor: pointer; 
-                margin:10px; 
-                i{
-                    margin:0px 10px;
-                }             
-            }
-        }
-
-    }
-    
-    .dropdown__container{
-        display: none !important;
+body{
+    .header{
         width:100%;
-        background: $secondry_background;
-        @include display_as_row_end();
-        
-        button{
-            padding:0;
-            background: none;
-            border:0;
-            i{
-                cursor:pointer;
-                padding:10px;
-                font-size: 22px;
+        background : $background;
+        .social__media__container{
+            @include display_as_row_end();
+            #smtext{
                 color:white;
-                
+                font-style: normal;
+                font-size: 15px;
             }
-            &:nth-child(2){
-                display: none;
+            div{
+                width: 42px;
+                height:42px;
+                background: $secondry_background;
+                border-bottom:22.5px solid $background ;
+                border-left:22.5px solid $background;
+                border-top:22.5px solid $secondry_background;
+                border-right:22.5px solid $secondry_background;
+            }
+            p,a{
+                @include display_as_row_center();
+                background: $secondry_background;
+                height:43px;
+                padding: 0px 10px;
+                font-size: 20px;
+                .fa-mobile{
+                    color:white;
+                    font-weight: light;
+                }
+                .fa-facebook{
+                    color:blue;
+                }
+                .fa-twitter{
+                    color:rgb(96, 141, 255);
+                }
+                .fa-youtube{
+                    color:red;
+                }
+                .fa-instagram{
+                    color:pink;
+                }
+                .fa-pinterest{
+                    color:rgb(255, 75, 105);
+                }
+                .fa-envelope-square{
+                    color:rgb(114, 5, 5);
+                    background: $white;
+                }
             }
         }
-    }
-
-    .navbar__container{
-        @include display_as_row_end();
-        div{
-            width: 43px;
-            height: 43px;
-            background: $secondry_background;
-            border-top:22.5px solid $background ;
-            border-left:22.5px solid $background;
-            border-bottom:22.5px solid $secondry_background;
-            border-right:22.5px solid $secondry_background;
-        }
-        a{
+        .logo__message__payment{
+            padding:20px 1px;
             @include display_as_row_center();
-            height:43px;
-            width:120px;
-            color:white;
-            background: $secondry_background;
-            // padding:10px 20px;
-            font-size: 15px;
-            &:hover{
-                background: $background;
-                color:$lemon-green;
-                text-shadow: 3px 3px 5px $black;
+            .logo{
+                @include display_as_row_center();
+                img{
+                    width:120px;
+                }
+                section{
+                    text-align: center;
+                    h1{
+                        font-size: 50px;
+                        text-shadow: 3px 3px 3px $black;
+                        font-family: Righteous;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
             }
-        } 
+            .message__payment{
+                @include display_as_row_center();
+                margin-left: 100px;
+                a{
+                    @include display_as_row_center();
+                    // box-shadow:2px 2px 5px 5px $secondry_background;
+                    outline:0;
+                    border:0;
+                    background:$orange;
+                    color:$white;
+                    padding:10px 20px;
+                    font-size: 15px;
+                    border-radius: 20px;  
+                    cursor: pointer; 
+                    margin:10px; 
+                    i{
+                        margin:0px 10px;
+                    }             
+                }
+            }
+
+        }
+        
+        .dropdown__container{
+            display: none !important;
+            width:100%;
+            background: $secondry_background;
+            @include display_as_row_end();
+            
+            button{
+                padding:0;
+                background: none;
+                border:0;
+                i{
+                    cursor:pointer;
+                    padding:10px;
+                    font-size: 22px;
+                    color:white;
+                    
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+        .navbar__container{
+            width:100%;
+            @include display_as_row_end();
+            background:$secondry-background;
+            list-style: none;
+            li{
+                cursor: pointer;
+                padding:0.5rem 1.5rem;
+                &:hover{
+                    background: $background;
+                    ul{
+                        display:block;
+                    }
+                }
+                a{
+                    color:$white;
+                    text-decoration: none;
+    
+                }
+                color:$white;
+                ul{
+                    display:none;
+                    position: absolute;
+                    z-index: 23;
+                    background: $background;
+                    list-style:None;
+                    // width:150px;
+                    margin-top: 7px;
+                    li{
+                        padding:0.5rem 1.5rem;
+                       a{
+                        &:hover{
+                            color:$lemon-green;
+                        }
+                       }
+                    }
+                }
+            }
+        }
     }
 }
+   

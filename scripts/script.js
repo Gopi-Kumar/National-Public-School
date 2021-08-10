@@ -1,3 +1,4 @@
+let endpoint  = "http://localhost:3002"
 function sendMessage(){
     let name = document.getElementById("name").value,
     email= document.getElementById("email").value,
@@ -13,16 +14,16 @@ function sendMessage(){
         });
 
         var requestOptions = {
-        method: 'POST',
-        headers: myHeaders,
-        body: raw,
-        redirect: 'follow'
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
         };
 
-        fetch(`${endpoint}/postletter/letterbox`, requestOptions)
+        fetch(`${endpoint}/postletter/nps`, requestOptions)
         .then(response => response.json())
         .then(result => {
-            console.log(res)
+            console.log(result)
         })
         .catch(error => {
             console.log("error",error);
@@ -44,7 +45,7 @@ function showDropdownMenu(){
     showDropdownButton.style.display = "none";
     closeDropdownButton.style.display = "flex";
 }
-
+showDropdownMenu();
 function closeDropdownMenu(){
     dropdownMenu.style.display = "none";
     showDropdownButton.style.display = "flex";

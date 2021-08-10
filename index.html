@@ -30,14 +30,14 @@
                 </section>
             </div>
             <div class="message__payment">
-                <button>
+                <a href="#messageForm">
                     <i class="fas fa-envelope"></i>
                     <p>Message Us</p>
-                </button>
-                <button>
+                </a>
+                <a href="https://nps.genericsoftware.in/Parent/Login.aspx">
                     <i class="fas fa-wallet"></i>
                     <p>Payment Online</p>
-                </button>
+                </a>
             </div>
         </div>
         <div class="dropdown__container">
@@ -45,16 +45,39 @@
                 <button id="closeDropdownButton" onclick="closeDropdownMenu()"><i class="fas fa-window-close"></i></button>
        </div>
         <div class="navbar__container">
-            <div></div>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Academic</a>
-            <a href="#">Facilities</a>
-            <a href="#">Addmission</a>
-            <a href="#">Gallery</a>
-            <a href="#">Campus</a>
-            <a href="#">Contact Us</a>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About us</a>
+                <ul id="about_us_dropdown">
+                    <li><a href="">Chaiman's Desk</a></li>
+                    <li><a href="">Principal's Desk</a></li>
+                    <li><a href="">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Academic</a>
+                <ul id="about_us_dropdown">
+                    <li><a href="">Chaiman's Desk</a></li>
+                    <li><a href="">Principal's Desk</a></li>
+                    <li><a href="">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Facilities</a>
+            </li>
+            <li>
+                <a href="#">Addmission</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+            <li>
+                <a href="#">Campus</a>
+            </li>
         </div>
+   </div>
     </div>
     <div class="home__page" >
         <div class="hero">
@@ -79,7 +102,7 @@
         </div>
     </div>
     <div class="about__us">
-        <div class="chairman__desk">
+        <div class="chairman__desk" id="chairman_desk">
             <div class="quotes">
                 <p><span id="dq">&#x201C;</span>
                     Ever inspiring ideas from the Head. I admire the good humanitarian work being done by the National Public School curriculum at such a fast pace I congratulate them for taking yet another step in the field of education through the promotion of the school.
@@ -97,7 +120,7 @@
                 </div>
             </div>
         </div>
-        <div class="principal__desk">
+        <div class="principal__desk" id="principal_desk">
             <div class="quotes">
                 <p><span id="dq">&#x201C;</span>No system can succeed unless it supported by earned forwards by parents because the home is the child first school, his/her first classroom, his/her first playground and his/her first teacher. It is there for extremely essential for home, the school teachers and the parents to join hands and provide meaning education to the child.
                 The teaching faculty makes and earnest efforts to motivate individuals and help them acquire both scientific linguistic excellence. The personal and intellectual guidance provided by our experts staff support students to achieve meritorious results in the board examination. I think that
@@ -123,31 +146,31 @@
                 </div>
             </div>
         </div>
-        <div class="history">
+        <div class="history" id="history">
             <h1>Our History</h1>
             <p>National Public School was established in 2nd April 1992. It is a co-educational unaided English medium school, ideally located on Safiabad Road, Delhi-110040. It is recognized by Directorate of Education, Delhi and is affiliated to the Central Board of Secondary Education (CBSE).
             The School got recognition in 1993 by MCD up to Primary level. The school recognized by Directorate of EducationGovt.  of NCT of Delhi up to 1st to 8th  in 1993-1994. Upgraded up to secondary level in the year 2000. Affiliation by CBSE granted w.e.f. from the session 2001-2002 up to secondary level. Further granted up gradation for the senior secondary level with all the three streams(Science, Commerce, Humanity). From the session 2011-12 CBSE also granted affiliation accordingly.At National Public School, we are passionate about the importance of providing each student with complete sense of belonging, of optimism and success, of being unique and of being heard. Our greatest responsibilities are to assist our students in building personal values, sprit, knowledge and vision.</p>
         </div>
-        <!-- <div class="managment"></div> -->
     </div>
-    <!-- <h1 class="message_contact">Message Or Contact us</h1> -->
-    <div class="contact__us">
-        <div id="messageForm">
-            <h1 style="text-decoration: underline;">Contact Us</h1>
-            <div class="name_input">
-                <label for="name">Your Name</label>
-                <input type="text" id="name">
-            </div>
-            <div class="contact_input">
-                 <label for="email">Your email or mobile no.</label>
-                 <input type="text" id="email">
-            </div>
-            <div class="message_input">
-                 <label for="message">Your message</label>
-                 <textarea id="message"></textarea>
-            </div>
-            <button onclick="sendMessage();">Send Message</button>
+    <div id="messageForm">
+        <h1>Message Us</h1>
+        <div class="name_input">
+            <label for="name">Your Name</label>
+            <input type="text" id="name">
         </div>
+        <div class="contact_input">
+             <label for="email">Your email or mobile no.</label>
+             <input type="text" id="email">
+        </div>
+        <div class="message_input">
+             <label for="message">Your message</label>
+             <textarea id="message"></textarea>
+        </div>
+        <button onclick="sendMessage();">Send Message</button>
+    </div>
+    <div class="contact__us" id="contact">
+        <h1 style="text-decoration: underline;">Contact Us</h1>
+
         <div class="contact__numbers">
             <!-- <h1 style="text-decoration: underline;">Our Contact Numbers</h1> -->
             <section>
@@ -191,6 +214,7 @@
     <div class="footer">
         <a href="#">Back to home</a>
     </div>
+    <script src="./scripts/header.js" type="text/javascript"></script>
     <script src="./scripts/script.js" type="text/javascript"></script>
     
 </body>
